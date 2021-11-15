@@ -6,6 +6,14 @@
 {{- else }}
 <meta name="robots" content="noindex, nofollow">
 {{- end }}
+<style>
+    .flex-container{
+        display: flex;
+        height: 35px;
+        align-items: center;
+        justify-content: space-between;
+    }
+</style>
 
 {{- /* Title */}}
 <title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
